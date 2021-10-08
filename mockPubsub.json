@@ -1,0 +1,13 @@
+{
+  "message": {
+    "attributes": {
+      "greeting": "Hello from the Cloud Pub/Sub Emulator!"
+    },
+    "data": {
+      "title": "Hello 👋🏼 Cloud Nord from Pub/Sub",
+      "information": "Un moment unique pour partager 🚀 et découvrir 😎"
+    },
+    "messageId": "136969346945"
+  },
+  "subscription": "projects/qima-cloud-nord-demo/subscriptions/report-pdf-subscription"
+}

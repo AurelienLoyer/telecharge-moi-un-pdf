@@ -1,0 +1,22 @@
+{
+  "name": "telecharge-moi-un-pdf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "generate": "node pdf.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "npx http-server www --p=9001 -c-1",
+    "start:cloud-function": "npx @google-cloud/functions-framework --target=pdfCloudFunctionOnPubSub --signature-type=event --project=qima-cloud-nord-demo",
+    "start:pubsub-emulators": "gcloud beta emulators pubsub start --host-port=localhost:8085 --project=qima-cloud-nord-demo"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/pubsub": "^2.18.1",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "pdf-lib": "^1.16.0",
+    "puppeteer": "^10.4.0"
+  }
+}
